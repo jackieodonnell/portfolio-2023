@@ -1,0 +1,54 @@
+:root {
+  --black: #1d1f1c;
+  --white: #f7f7f7da;
+  --off-white: rgba(247, 247, 247, 0.753);
+  --yellow: #eeb741;
+  --blue: #5bbbe1;
+}
+
+body {
+  background-color: var(--black);
+}
+
+h1 {
+  color: var(--yellow);
+}
+
+h3 {
+  color: var(--off-white);
+}
+p {
+  color: var(--white);
+}
+
+a {
+  color: var(--blue);
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+.blue {
+  color: var(--blue);
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: var(--white);
+}
+
+#nav a.router-link-exact-active {
+  color: var(--blue);
+}
