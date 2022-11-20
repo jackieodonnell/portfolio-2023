@@ -7,30 +7,11 @@
 }
 
 body {
-  background-color: var(--black);
-}
-
-h1 {
-  color: var(--yellow);
-}
-
-h3 {
-  color: var(--off-white);
-}
-p {
-  color: var(--white);
-}
-
-a {
-  color: var(--blue);
-}
-
-.yellow {
-  color: var(--yellow);
-}
-
-.blue {
-  color: var(--blue);
+  /* background-image: linear-gradient(to bottom right, #0A2424 60%, #28313d, #395b5b);
+  height: 100vh; */
+  /* background-color: #7f797e; */
+  /* background-color: #6c676b; */
+  background-color: hsl(285, 6%, 14%);
 }
 
 #app {
@@ -42,13 +23,25 @@ a {
 
 #nav {
   padding: 30px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: rgba(243, 187, 83, 0.937);
 }
-
 #nav a {
-  font-weight: bold;
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-transform: lowercase;
   color: var(--white);
 }
 
 #nav a.router-link-exact-active {
   color: var(--blue);
+}
+
+@font-face {
+  font-family: "Orange_Kid";
+  src: local("Orange_Kid"),
+    url(../fonts/orange_kid.ttf) format("truetype");
 }
