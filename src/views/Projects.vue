@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-      <h1>This is a page for projects.</h1>
+      <h1>Coming Soon.</h1>
     </div>
 </template>
 
