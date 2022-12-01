@@ -2,9 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import VueTypedJs from 'vue-typed-js'
+
 require("./assets/styles.css");
 
 Vue.config.productionTip = false
+Vue.use(VueTypedJs)
 
 new Vue({
   router,

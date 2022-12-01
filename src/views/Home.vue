@@ -1,24 +1,36 @@
 <template>
   <div class="home">
     <div class="name">
-      <h1 id="first-name">jackie o'donnell.</h1>
+      <!-- <h1 id="first-name">jackie o'donnell.</h1> -->
+      <vue-typed-js :strings="['Jacqueline', 'Jackie O\'Donnell.']" :smartBackspace="true" :typeSpeed="120" :backSpeed="80" :backDelay="50" :startDelay="1200">
+        <h1 class="typed-name">Hi, I'm <span class="typing typed-name"></span></h1>
+      </vue-typed-js>
     </div>
-    <h2 id="about-me">about me:</h2>
-    <p id="bio">Full-stack  web  developer  with  a  knack  for  finding  and  solving  problems. 
-      Self-motivated,  detail-oriented,  and  always learning.</p>
-    <h2 id="tech-stack">tech stack:</h2>
-    <p id="skills">Java, JavaScript, SQL, Python, HTML, CSS, Spring Boot, Vue.js, PostgreSQL, 
-      jQuery, Git, JUnit, Cypress, Maven</p>
+
+    <div class="details">
+      <div class="bio">
+        <h2>about me:</h2>
+        <p>Full-stack  web  developer  with  a  knack  for  finding  and  solving  problems. 
+          Self-motivated,  detail-oriented,  and  always learning.</p>    
+      </div>
+      <div class="skills">
+        <h2>tech stack:</h2>
+        <p>Java, JavaScript, SQL, Python, HTML, CSS, Spring Boot, Vue.js, PostgreSQL, 
+          jQuery, Git, JUnit, Cypress, Maven</p>
+      </div>
+    </div>
+
+
+
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-
 export default {
   name: 'Home',
   components: {
-  }
+  },
 }
 </script>
 
@@ -28,81 +40,61 @@ export default {
 .name {
   display: flex;
   flex-direction: row;
-  margin-top: 15%;
   justify-content: center;
+  min-height: 50vh;
 }
-#first-name{  
-  font-family: monospace;
+.typed-name{  
+  font-family: "Poppins-Regular";
   font-size: 4rem;
-  font-weight: 400;
-  color: white;
-  margin-bottom: 10%;
-  position: relative
+  font-weight: 600;
+  color:#ecebeb;
 }
 
-#first-name::before,
-#first-name::after{
-  content: ''; 
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.typing {
+  color:#e25250;
 }
 
-#first-name::before{
-  background: hsl(285, 6%, 14%);
-  animation: typewriter 3s steps(17) 1s forwards;
-}
-#first-name::after{
-  width: .125em;
-  background: rgba(243, 187, 83, 0.937);
-  animation: typewriter 3s steps(17) 1s forwards,
-  blink 750ms steps(2, start) infinite;
+#about-me {
+  margin-top: 30px;
 }
 
-@keyframes typewriter {
-  to {
-    left: 100%;
-  }
-}
-
-@keyframes blink {
-  to {
-    visibility: hidden;
-  }
-}
-
-#about-me, #bio {
-  font-family: monospace;
+.details {
+  font-family: "Poppins-Regular";
   font-size: 1.8rem;
   font-weight: 400;
-  color: white;
+  color: #ecebeb;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio, .skills {
+  display: flex;
+  flex-direction: column;
+  color:  #ecebeb;
   text-transform: lowercase;
-  text-align: left;
+  align-items: flex-start;
   margin-left: 10%;
-}
-
-#bio{
-  margin-right: 50%;
-  font-size: 1rem;
-  margin-bottom: 0px;
-}
-
-#tech-stack, #skills {
-  margin-top: 0px;
-  font-family: monospace;
-  font-size: 1.8rem;
-  font-weight: 400;
-  color: white;
-  text-transform: lowercase;
-  text-align: right;
   margin-right: 10%;
+  text-align: left;
+  font-size: 1.3rem;
+  }
+
+.bio p {
+  margin-right: 30%;
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+.skills {
+  align-items: flex-end;
+  text-align: right;
+}
+.skills p {
+  margin-left: 30%;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 10%;
 }
 
-#skills {
-  text-align: right;
-  margin-left: 50%;
-  font-size: 1rem;
-}
+
+
 </style>
