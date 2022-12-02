@@ -13,6 +13,9 @@ body {
   /* background-color: #6c676b; */
   /* background-color: hsl(285, 6%, 14%); */
   background-color: #313030;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
 }
 
 #app {
@@ -44,6 +47,35 @@ body {
 
 #nav a.router-link-exact-active {
   color: #519cba;
+  font-weight: 800;
+}
+
+#footer {
+  background-color: #1e1d1d93;
+  width: 100%;
+  margin-bottom: -40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #ecebeb5a;
+  font-size: 0.9rem;
+}
+
+#footer a {
+  background-color: transparent;
+  border: 2px solid #ecebeb41;
+  border-radius: 2px;
+  padding: 5px;
+  padding-inline: 10px;
+  text-transform: uppercase;
+  color: #ecebeb5a;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  border: 2px solid #ecebeb7a;
+  color: #ecebeb8d;
 }
 
 @font-face {
@@ -56,10 +88,9 @@ body {
 }
 ::-webkit-scrollbar-track {
   background-color: transparent;
-  margin: .5em;
+  margin: 0.5em;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #242323c6;
   border-radius: 100vw;
 }
-

@@ -5,7 +5,13 @@
       <router-link to="/projects">Projects</router-link> |
       <router-link to="/contact">Contact</router-link>
     </div>
-    <router-view/>
+    <router-view />
+    <div id="footer">
+      <p>Copyright © 2022 jackieodonnell. All Rights Reserved.</p>
+      <a href="https://github.com/jackieodonnell/portfolio-2022" target="_blank"
+        >View Portfolio Repo</a
+      >
+    </div>
   </div>
 </template>
 
