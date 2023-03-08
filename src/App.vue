@@ -7,7 +7,7 @@
     </div>
     <router-view />
     <div id="footer">
-      <p>Copyright © 2022 jackieodonnell. All Rights Reserved.</p>
+      <p>Copyright © 2023 jackieodonnell. All Rights Reserved.</p>
       <a href="https://github.com/jackieodonnell/portfolio-2022" target="_blank"
         >View Portfolio Repo</a
       >
